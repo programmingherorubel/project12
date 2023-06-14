@@ -1,0 +1,73 @@
+.dashbordMenu{
+    width: 400px;
+    height: 100%;
+    border-right: 1px  solid rgb(192, 186, 186);
+}
+.hamburger{
+    display: none;
+}
+.dashbordLi{
+    background-color: #07072E;
+    border-radius: 15px;
+}
+.graydashboritem{
+    background-color: gray;
+    border-radius: 15px;
+}
+.moibileMenu{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    background: #07072E;
+    width: 50%;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+.moibileMenu.activemobile{
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .dashbordMenu{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .dashbordMenu{
+        display: none;
+    }
+    .hamburger{
+    display: block;}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .dashbordMenu{
+        display: none;
+    }
+    .hamburger{
+    display: block;}
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+/*x-large devices (dekstops,1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    
+}
+
+/*Extra extra  large devices (larges desktops, 1200px and up)*/
+@media (min-width: 1400px) {
+
+}

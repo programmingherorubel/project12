@@ -1,0 +1,41 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: #f44336;
+    margin: 0 5px;
+    animation: notFoundAnimation 1s infinite alternate;
+  }
+  
+  @keyframes notFoundAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .title {
+    font-size: 60px;
+    margin: 20px 0;
+  }
+  
+  .description {
+    font-size: 20px;
+    text-align: center;
+  }
